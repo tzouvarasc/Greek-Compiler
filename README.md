@@ -28,7 +28,7 @@ repository root or review the sample programs under [`tests/`](tests/).
 ## Compiler Architecture
 
 The compiler is implemented in a single Python module
-[`greek_4933_4952.py`](greek_4933_4952.py) and is structured into the following
+[`compiler.py`](compiler.py) and is structured into the following
 major components:
 
 1. **Lexical analysis (`lexicalAnalyzer`)** – Tokenises the source code, handling
@@ -52,7 +52,7 @@ major components:
 Run the compiler by passing a greek++ source file (`.gr`) to the driver script:
 
 ```bash
-python greek_4933_4952.py tests/gtest1.gr
+python compiler.py tests/gtest1.gr
 ```
 
 Compilation produces three artifacts in the working directory:
@@ -71,7 +71,7 @@ locate the issue in the source program.
 The [`tests/`](tests/) folder contains sample greek++ programs that exercise the
 compiler features, including function calls, loops, parameter passing by reference,
 I/O, and recursive structures. You can compile any of them using the command above
-(e.g. `python greek_4933_4952.py tests/gtestfinal.gr`).
+(e.g. `python compiler.py tests/gtestfinal.gr`).
 
 These examples are a good starting point for understanding the language syntax and
 verifying modifications to the compiler.
