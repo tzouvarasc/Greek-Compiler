@@ -81,14 +81,3 @@ verifying modifications to the compiler.
 * Python 3.9 or newer.
 * No third-party packages are required; the compiler relies solely on the Python
   standard library.
-
-## Contributing
-
-Feel free to fork the repository and extend the greek++ language or the compiler
-backend. Possible directions include:
-
-* adding new data types (arrays, booleans, strings),
-* improving error diagnostics, or
-* targeting a different assembly language.
-
-Pull requests and issue reports are welcome!
